@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GoldenDream\'s Bowling</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="signuphere">Create a new account? SignUp</string>
+    <string name="SignInText">Already Sign Up? Click here</string>
+    <string name="SignInHere">Already Sign Up? Click Here</string>
+</resources>
