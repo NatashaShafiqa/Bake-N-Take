@@ -32,9 +32,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#CD5C5157"
+            android:drawableEnd="@drawable/ic_username"
             android:hint="@string/username"
             android:textColorHint="@color/black"
-            android:drawableEnd="@drawable/ic_username">
+            android:translationX="@dimen/cardview_default_radius">
 
 
         </com.google.android.material.textfield.TextInputEditText>
