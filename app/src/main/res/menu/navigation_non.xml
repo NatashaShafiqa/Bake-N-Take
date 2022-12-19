@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:title="Home"
+            android:id="@+id/nav_home"
+            />
+        <item
+            android:title="Booking"
+            android:id="@+id/nav_booking"
+            />
+        <item
+            android:title="Member"
+            android:id="@+id/nav_member"
+            />
+        <item
+            android:title="Announcement"
+            android:id="@+id/nav_announce"
+            />
+        <item
+            android:title="Merchandise"
+            android:id="@+id/nav_merch"
+            />
+        <item
+            android:title="Promotion"
+            android:id="@+id/nav_promo"
+            />
+    </group>
+    <item android:title=""
+        >
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:title="Setting"
+                    android:id="@+id/nav_setting"
+                    />
+                <item
+                    android:title="About Us"
+                    android:id="@+id/nav_aboutus"
+                    />
+            </group>
+        </menu>
+    </item>
+</menu>

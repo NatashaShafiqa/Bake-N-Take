@@ -13,6 +13,10 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -21,9 +25,13 @@ import com.google.firebase.database.ValueEventListener;
 
 
 public class signUp extends AppCompatActivity {
-    TextView textViewSignIn,Fullname,mail,Pass,phone,username;
+
+    private FirebaseAuth mAuth;
+    String UserID;
+    TextView textViewSignIn,Fullname,mail,Pass,phone;
     Button SignupButton;
     ProgressBar bar;
+
     DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://workshop2-d8198-default-rtdb.firebaseio.com/");
 
     @Override
@@ -36,8 +44,8 @@ public class signUp extends AppCompatActivity {
         Pass = findViewById(R.id.passwordSUp);
         phone = findViewById(R.id.phoneSUp);
         SignupButton = findViewById(R.id.Reg);
-        username = findViewById(R.id.Userrrr);
         bar = (ProgressBar) findViewById(R.id.progressBar);
+        mAuth = FirebaseAuth.getInstance();
 
         textViewSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,14 +65,14 @@ public class signUp extends AppCompatActivity {
         });
     }
 
+
     public void Register(){
         final String Name = Fullname.getText().toString();
         final String Email = mail.getText().toString();
         final String Phone = phone.getText().toString();
         final String pass = Pass.getText().toString();
-        final String User =username.getText().toString();
 
-        if(Name.isEmpty()||Phone.isEmpty()||Email.isEmpty()||pass.isEmpty()||User.isEmpty())
+        if(Name.isEmpty()||Phone.isEmpty()||Email.isEmpty()||pass.isEmpty())
         {
             Toast.makeText(signUp.this,"Please fill all fields",Toast.LENGTH_LONG).show();
         }
@@ -88,32 +96,47 @@ public class signUp extends AppCompatActivity {
         else
         {
             bar.setVisibility(View.VISIBLE);
-            databaseReference.child("users").addListenerForSingleValueEvent(new ValueEventListener() {
-                @Override
-                public void onDataChange(@NonNull DataSnapshot snapshot) {
-                    bar.setVisibility(View.INVISIBLE);
-                    if (snapshot.hasChild(User)) {
-                        Toast.makeText(signUp.this, "User already registered", Toast.LENGTH_LONG).show();
-                    } else {
+            mAuth.createUserWithEmailAndPassword(Email,pass)
+                    .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                        @Override
+                        public void onComplete(@NonNull Task<AuthResult> task) {
+                            if (task.isSuccessful()) {
+                                Toast.makeText(getApplicationContext(), "Registration successful!", Toast.LENGTH_LONG).show();
+                                bar.setVisibility(View.GONE);
+                                UserID = mAuth.getCurrentUser().getUid();
+                                databaseReference.child("users").addListenerForSingleValueEvent(new ValueEventListener() {
+                                    @Override
+                                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                        bar.setVisibility(View.INVISIBLE);
+                                        if (snapshot.hasChild(UserID)) {
+                                            Toast.makeText(signUp.this, "User already registered", Toast.LENGTH_LONG).show();
+                                        } else {
 
-                        databaseReference.child("users").child(User).child("fullname").setValue(Name);
-                        databaseReference.child("users").child(User).child("email").setValue(Email);
-                        databaseReference.child("users").child(User).child("phone").setValue(Phone);
-                        databaseReference.child("users").child(User).child("username").setValue(User);
-                        databaseReference.child("users").child(User).child("password").setValue(pass);
-                        Toast.makeText(signUp.this, "Registration successful", Toast.LENGTH_LONG).show();
-                        Intent intent = new Intent(getApplicationContext(),MainInterface.class);
-                        startActivity(intent);
-                        finish();
+                                            databaseReference.child("users").child(UserID).child("fullname").setValue(Name);
+                                            databaseReference.child("users").child(UserID).child("email").setValue(Email);
+                                            databaseReference.child("users").child(UserID).child("phone").setValue(Phone);
+                                            databaseReference.child("users").child(UserID).child("password").setValue(pass);
+                                            Toast.makeText(signUp.this, "Registration successful", Toast.LENGTH_LONG).show();
+                                            Intent intent = new Intent(getApplicationContext(),Login.class);
+                                            startActivity(intent);
+                                            finish();
 
-                    }
-                }
+                                        }
+                                    }
 
-                @Override
-                public void onCancelled(@NonNull DatabaseError error) {
 
-                }
-            });
+                                    @Override
+                                    public void onCancelled(@NonNull DatabaseError error) {
+
+                                    }
+                                });
+                            }
+                            else {
+                                Toast.makeText(getApplicationContext(), "Registration failed! Please try again later", Toast.LENGTH_LONG).show();
+                                bar.setVisibility(View.GONE);
+                            }
+                        }
+                    });
 
         }
 

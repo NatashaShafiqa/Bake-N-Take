@@ -1,4 +1,4 @@
-package com.example.goldendreamsbowling;
+package com.example.goldendreamsbowling.JavaFile;
 
 import android.widget.TextView;
 

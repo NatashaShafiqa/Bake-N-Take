@@ -5,4 +5,110 @@
     <string name="signuphere">Create a new account? SignUp</string>
     <string name="SignInText">Already Sign Up? Click here</string>
     <string name="SignInHere">Already Sign Up? Click Here</string>
+    <string name="title_activity_main_interface2">MainInterface2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="nav_open">open</string>
+    <string name="nav_close">close</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_check_out_book">CheckOutBook</string>
+    <string name="hello">Hello</string>
+    <string name="alice">Alice</string>
+    <string name="search_elements">Search elements</string>
+    <string name="t_shirt">T-shirt</string>
+    <string name="mug">Mug</string>
+    <string name="totebag">Totebag</string>
+    <string name="cap">Cap</string>
+    <string name="trending">TRENDING</string>
+    <string name="welcome_to_t_shirt_page">WELCOME TO T-SHIRT PAGE</string>
+    <string name="tshirtpage">TshirtPage</string>
+    <string name="totebagpage">Totebagpage</string>
+    <string name="welcome_to_totebag_page">WELCOME TO TOTEBAG PAGE</string>
+    <string name="welcome_to_cap_page">WELCOME TO CAP PAGE</string>
+    <string name="cappage">Cappage</string>
+    <string name="welcome_to_mug_page">WELCOME TO MUG PAGE</string>
+    <string name="mugpage">Mugpage</string>
+    <string name="white_t_shirt">WHITE T-SHIRT</string>
+    <string name="orange_t_shirt">ORANGE T-SHIRT</string>
+    <string name="purple_t_shirt">PURPLE T-SHIRT</string>
+    <string name="green_t_shirt">GREEN T-SHIRT</string>
+    <string name="white_totebag">WHITE TOTEBAG</string>
+    <string name="purple_totebag">PURPLE TOTEBAG</string>
+    <string name="green_totebag">GREEN TOTEBAG</string>
+    <string name="white_mug">WHITE MUG</string>
+    <string name="dark_gray_mug">DARK GRAY MUG</string>
+    <string name="white_cap">WHITE CAP</string>
+    <string name="dark_gray_cap">DARK GRAY CAP</string>
+    <string name="purple_cap">PURPLE CAP</string>
+    <string name="purple_mug">PURPLE MUG</string>
+    <string name="dark_grey_mug">DARK GREY MUG</string>
+
+    <string-array name="ShoesSize">
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="numOfPeople_arrays">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="numGame">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="Time1">
+        <item>"Please Select A Time"</item>
+        <item>10.00-11.30</item>
+        <item>11.30-13.00</item>
+        <item>13.00-14.30</item>
+        <item>14.30-16.00</item>
+        <item>16.00-17.30</item>
+        <item>17.30-19.00</item>
+        <item>19.00-20.30</item>
+        <item>20.30-22.00</item>
+    </string-array>
+
+    <string-array name="Time2">
+        <item>"Please Select A Time"</item>
+        <item>10.00-12.00</item>
+        <item>12.00-14.00</item>
+        <item>14.00-16.00</item>
+        <item>16.00-18.00</item>
+        <item>18.00-20.00</item>
+    </string-array>
+
+    <string-array name="Time3">
+        <item>"Please Select A Time"</item>
+        <item>10.00-12.30</item>
+        <item>12.30-14.00</item>
+        <item>14.00-16.30</item>
+        <item>16.30-19.00</item>
+        <item>19.00-21.30</item>
+    </string-array>
+
+
 </resources>

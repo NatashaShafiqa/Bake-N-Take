@@ -1,9 +1,11 @@
 package com.example.goldendreamsbowling;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.content.Intent;
-import android.os.Handler;;
+import android.os.Handler;;import com.example.goldendreamsbowling.Guest.MainInterface;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,9 +16,21 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(MainActivity.this, Login.class));
-                finish();
+                SharedPreferences sharedPreferences = getSharedPreferences(Login.Pref_Name,0);
+                boolean hasLogin = sharedPreferences.getBoolean("hasLoggedIn",false);
+                if(hasLogin)
+                {
+                    startActivity(new Intent(MainActivity.this, HomePage.class));
+                    finish();
+                }
+                else
+                {
+                    startActivity(new Intent(MainActivity.this, MainInterface.class));
+                    finish();
+                }
+
             }
         },650);
+
     }
 }

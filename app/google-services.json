@@ -8,12 +8,20 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:116986843475:android:2b630d89db29ab8caad1a6",
+        "mobilesdk_app_id": "1:116986843475:android:b40192c30e3f52b4aad1a6",
         "android_client_info": {
           "package_name": "com.example.goldendreamsbowling"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "116986843475-lf46pmvkl1n0toj3vtq3vj6sperrv06l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.goldendreamsbowling",
+            "certificate_hash": "34a35b065329627216a90923385f998c2292a501"
+          }
+        },
         {
           "client_id": "116986843475-bmrpv2ggscmiblbe7l3vd8o7t0kui4t2.apps.googleusercontent.com",
           "client_type": 3

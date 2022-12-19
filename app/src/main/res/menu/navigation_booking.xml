@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:title="Booking"
+        android:icon="@drawable/ic_book_24"
+        android:id="@+id/booking"
+        />
+    <item
+        android:title="Check Out"
+        android:icon="@drawable/ic_check_box_24"
+        android:id="@+id/checkout"
+        />
+    <item
+        android:title="Done"
+        android:icon="@drawable/ic_done_24"
+        android:id="@+id/done"
+        />
+
+
+</menu>

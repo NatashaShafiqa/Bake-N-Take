@@ -1,7 +1,17 @@
 buildscript {
-    dependencies {
+    repositories {
+        // Make sure that you have the following two repositories
+        google()  // Google's Maven repository
 
-    classpath 'com.google.gms:google-services:4.3.14'
+        mavenCentral()  // Maven Central repository
+
+    }
+    dependencies {
+        classpath 'com.google.gms:google-services:4.3.14'
+
+
+        // Add the dependency for the Google services Gradle plugin
+
     }
 }// Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
