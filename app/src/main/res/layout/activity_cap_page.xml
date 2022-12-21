@@ -126,10 +126,12 @@
                 android:layout_marginEnd="72dp"
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/ic_add_circle_outline"
+                app:layout_constraintBottom_toTopOf="@+id/layoutDarkgraycap"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.977"
+                app:layout_constraintHorizontal_bias="0.992"
                 app:layout_constraintStart_toEndOf="@+id/imageaddwhitecap"
                 app:layout_constraintTop_toBottomOf="@+id/layoutPurplecap"
+                app:layout_constraintVertical_bias="0.0"
                 app:tint="@color/neon_pink"
                 tools:ignore="MissingConstraints" />
 
@@ -279,11 +281,14 @@
                 android:id="@+id/imageaddwhitecap"
                 android:layout_width="70dp"
                 android:layout_height="40dp"
-                android:layout_marginStart="72dp"
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/ic_add_circle_outline"
+                app:layout_constraintBottom_toTopOf="@+id/layoutDarkgraycap"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.202"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/layoutWhitecap"
+                app:layout_constraintVertical_bias="0.0"
                 app:tint="@color/neon_pink"
                 tools:ignore="MissingConstraints" />
 
@@ -291,12 +296,17 @@
                 android:id="@+id/imageaddmug"
                 android:layout_width="70dp"
                 android:layout_height="40dp"
+                android:layout_marginTop="4dp"
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/ic_add_circle_outline"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/layoutDarkgraycap"
+                app:layout_constraintVertical_bias="0.0"
                 app:tint="@color/neon_pink"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="172dp" />
+                tools:ignore="MissingConstraints" />
 
             <ImageView
                 android:id="@+id/imageaddtocartcap"
@@ -304,10 +314,12 @@
                 android:layout_height="40dp"
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/ic_shopping_cart"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.924"
+                app:layout_constraintHorizontal_bias="0.921"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageaddmug"
+                app:layout_constraintVertical_bias="0.0"
                 app:tint="@color/neon_pink"
                 tools:ignore="MissingConstraints" />
 

@@ -115,7 +115,7 @@
                 android:layout_width="253dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:text="PILIH LA KASUT!!!" />
+                android:text="Number of Shoes" />
 
             <Spinner
                 android:id="@+id/spnShoes"

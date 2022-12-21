@@ -19,7 +19,6 @@ import com.example.goldendreamsbowling.HomePage;
 import com.example.goldendreamsbowling.Login;
 import com.example.goldendreamsbowling.R;
 import com.example.goldendreamsbowling.SubsMember;
-import com.example.goldendreamsbowling.databinding.ActivityDrawerBaseBinding;
 import com.google.android.material.navigation.NavigationView;
 
 public class Drawer_base extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {

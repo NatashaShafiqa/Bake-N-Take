@@ -53,7 +53,7 @@ public class CheckOutBook extends AppCompatActivity {
         binding.DatePay.setText("Date : " + date);
         binding.NoPlayer.setText("Number of Player : "+ noPlayer);
         binding.noGame.setText("Number of Games : "+ noGames);
-        binding.ShoesPay.setText("Shoes Sizes : "+ pickShoes);
+        binding.ShoesPay.setText("Number of Shoes : "+ pickShoes);
         binding.TimePay.setText("Time : "+ time);
         binding.subtotal.setText("Subtotal : RM"+ priceCheck);
         binding.discount.setText("Discount : RM"+ Discount);
@@ -72,7 +72,7 @@ public class CheckOutBook extends AppCompatActivity {
                         final String dataName=snapshot.child("fullname").getValue().toString();
                         final String dataEmail=snapshot.child("email").getValue().toString();
 
-                        databaseReference.child("Booking").addListenerForSingleValueEvent(new ValueEventListener() {
+                        databaseReference.child("Bookings").addListenerForSingleValueEvent(new ValueEventListener() {
                             @Override
                             public void onDataChange(@NonNull DataSnapshot snapshot) {
                                 databaseReference.child("Booking").child(date).child(UID).child("Date").setValue(date);

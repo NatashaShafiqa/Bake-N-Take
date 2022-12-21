@@ -290,12 +290,17 @@
                 android:id="@+id/imageaddmug"
                 android:layout_width="70dp"
                 android:layout_height="40dp"
+                android:layout_marginTop="8dp"
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/ic_add_circle_outline"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/layoutDarkgraycap"
+                app:layout_constraintVertical_bias="0.0"
                 app:tint="@color/neon_pink"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="172dp" />
+                tools:ignore="MissingConstraints" />
 
             <ImageView
                 android:id="@+id/imageaddtocartcap"

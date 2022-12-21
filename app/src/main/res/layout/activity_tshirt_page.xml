@@ -291,6 +291,7 @@
             </LinearLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
                 android:layout_width="366dp"
                 android:layout_height="69dp"
                 android:layout_marginTop="100dp"
@@ -349,13 +350,16 @@
                 android:id="@+id/imageaddwhitetshirt"
                 android:layout_width="70dp"
                 android:layout_height="40dp"
-                android:layout_marginStart="76dp"
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/ic_add_circle_outline"
+                app:layout_constraintBottom_toTopOf="@+id/layoutOrangetshirt"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.223"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutWhiteTshirt"
+                app:layout_constraintVertical_bias="0.0"
                 app:tint="@color/neon_pink"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteY="207dp" />
+                tools:ignore="MissingConstraints" />
 
             <ImageView
                 android:id="@+id/imageaddpurpletshirt"
@@ -364,49 +368,59 @@
                 android:layout_marginEnd="60dp"
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/ic_add_circle_outline"
+                app:layout_constraintBottom_toTopOf="@+id/layoutCap"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.978"
+                app:layout_constraintHorizontal_bias="0.876"
                 app:layout_constraintStart_toEndOf="@+id/imageaddwhitetshirt"
+                app:layout_constraintTop_toBottomOf="@+id/layoutPurpletshirt"
+                app:layout_constraintVertical_bias="0.0"
                 app:tint="@color/neon_pink"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteY="207dp" />
+                tools:ignore="MissingConstraints" />
 
             <ImageView
                 android:id="@+id/imageaddorangetshirt"
                 android:layout_width="70dp"
                 android:layout_height="40dp"
-                android:layout_marginStart="88dp"
+                android:layout_marginTop="1dp"
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/ic_add_circle_outline"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.223"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutOrangetshirt"
+                app:layout_constraintVertical_bias="0.0"
                 app:tint="@color/neon_pink"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteY="452dp" />
+                tools:ignore="MissingConstraints" />
 
             <ImageView
                 android:id="@+id/imageaddgreentshirt"
                 android:layout_width="70dp"
                 android:layout_height="40dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="128dp"
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/ic_add_circle_outline"
+                app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.663"
                 app:layout_constraintStart_toEndOf="@+id/imageaddorangetshirt"
+                app:layout_constraintTop_toBottomOf="@+id/layoutCap"
                 app:tint="@color/neon_pink"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteY="452dp" />
+                tools:ignore="MissingConstraints" />
 
             <ImageView
                 android:id="@+id/imageaddtocarttshirt"
                 android:layout_width="70dp"
                 android:layout_height="40dp"
-                android:layout_marginTop="24dp"
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/ic_shopping_cart"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.924"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageaddgreentshirt"
+                app:layout_constraintVertical_bias="0.172"
                 app:tint="@color/neon_pink"
                 tools:ignore="MissingConstraints" />
 

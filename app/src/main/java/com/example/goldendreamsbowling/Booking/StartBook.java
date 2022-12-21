@@ -106,7 +106,7 @@ public class StartBook extends AppCompatActivity {
                             boolean hasSubbed = sharedPreferences.getBoolean("hasSubbed",false);
                             if(hasSubbed)
                             {
-                                discount = PriceRM*2.5;
+                                discount = PriceRM*0.15;
                             }
                             else
                             {
@@ -154,7 +154,7 @@ public class StartBook extends AppCompatActivity {
                             boolean hasSubbed = sharedPreferences.getBoolean("hasSubbed",false);
                             if(hasSubbed)
                             {
-                                discount = PriceRM*2.5;
+                                discount = PriceRM*0.15;
                             }
                             else
                             {
@@ -202,7 +202,7 @@ public class StartBook extends AppCompatActivity {
                             boolean hasSubbed = sharedPreferences.getBoolean("hasSubbed",false);
                             if(hasSubbed)
                             {
-                                discount = PriceRM*2.5;
+                                discount = PriceRM*0.15;
                             }
                             else
                             {
