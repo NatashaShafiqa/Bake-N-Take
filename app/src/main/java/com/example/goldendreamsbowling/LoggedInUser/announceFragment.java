@@ -32,7 +32,6 @@ public class announceFragment extends Drawer_base {
         super.onCreate(savedInstanceState);
         activityAnnounceFragmentBinding =activityAnnounceFragmentBinding.inflate(getLayoutInflater());
         setContentView(activityAnnounceFragmentBinding.getRoot());
-        allocateActivityTitle("Announcement");
 
         listView = findViewById(R.id.listviewID);
         listAnnounce = new ArrayList<>();

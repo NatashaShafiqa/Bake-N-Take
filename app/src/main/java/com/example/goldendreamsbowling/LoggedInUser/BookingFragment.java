@@ -22,7 +22,6 @@ public class BookingFragment extends Drawer_base {
         super.onCreate(savedInstanceState);
         activityBookingFragmentBinding= activityBookingFragmentBinding.inflate(getLayoutInflater());
         setContentView(activityBookingFragmentBinding.getRoot());
-        allocateActivityTitle("Booking ");
 
         addBook = findViewById(R.id.addBook);
         ViewBook = findViewById(R.id.viewBooking);

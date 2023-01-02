@@ -11,5 +11,10 @@
     <color name="kuning">#CDDC39</color>
     <color name="B3EAFB">#B3EAFB</color>
     <color name="neon_pink">#FFFF10F0</color>
+    <color name="C9F8DE">#C9F8DE</color>
+    <color name="E9FDF2">#E9FDF2</color>
+    <color name="S172945">#172945</color>
+    <color name="S37">#284167</color>
+    <color name="B30">#7DB0FD</color>
     <color name="colorAccent">#FF333333</color>
 </resources>

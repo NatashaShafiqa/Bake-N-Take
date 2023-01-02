@@ -20,7 +20,6 @@ public class merchFragment extends Drawer_base {
         super.onCreate(savedInstanceState);
         activityMerchFragmentBinding = activityMerchFragmentBinding.inflate(getLayoutInflater());
         setContentView(activityMerchFragmentBinding.getRoot());
-        allocateActivityTitle("Merchandise");
 
         activityMerchFragmentBinding.layoutTshirt.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -40,9 +40,6 @@ public class StartBook extends AppCompatActivity {
 
         price = (TextView) findViewById(R.id.Price);
 
-
-
-
         binding.Date.setOnFocusChangeListener(new View.OnFocusChangeListener() {
 
             @Override

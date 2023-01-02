@@ -14,7 +14,6 @@ public class promoFragment extends Drawer_base {
         super.onCreate(savedInstanceState);
         activityPromoFragmentBinding = activityPromoFragmentBinding.inflate(getLayoutInflater());
         setContentView(activityPromoFragmentBinding.getRoot());
-        allocateActivityTitle("Promotion");
     }
     @Override
     public void onBackPressed() {

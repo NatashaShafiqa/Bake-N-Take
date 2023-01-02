@@ -4,15 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/kuning"
+    android:background="@color/C9F8DE"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="126dp"
-        android:layout_height="51dp"
-        android:text="Logo app"
-        android:textColor="@color/black"
-        android:textSize="30dp"
+        android:layout_width="298dp"
+        android:layout_height="288dp"
+        android:background="@drawable/logo"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

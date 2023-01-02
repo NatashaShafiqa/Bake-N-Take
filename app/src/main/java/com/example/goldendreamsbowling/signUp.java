@@ -13,6 +13,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.goldendreamsbowling.Guest.MainInterface;
+import com.example.goldendreamsbowling.LoggedInUser.BookingFragment;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -38,7 +40,7 @@ public class signUp extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
-        textViewSignIn = findViewById(R.id.SignInText);
+        textViewSignIn = findViewById(R.id.SignInTextt);
         Fullname = findViewById(R.id.NameSUp);
         mail = findViewById(R.id.emailSUp);
         Pass = findViewById(R.id.passwordSUp);
@@ -140,5 +142,12 @@ public class signUp extends AppCompatActivity {
 
         }
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(this, MainInterface.class));
+        overridePendingTransition(0,0);
+        finish();
     }
 }

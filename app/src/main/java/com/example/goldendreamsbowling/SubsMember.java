@@ -41,16 +41,30 @@ public class SubsMember extends Drawer_base {
         super.onCreate(savedInstanceState);
         activitySubsMemberBinding = activitySubsMemberBinding.inflate(getLayoutInflater());
         setContentView(activitySubsMemberBinding.getRoot());
-        allocateActivityTitle("Members Subscription");
 
         ID = FirebaseAuth.getInstance();
         Subs = findViewById(R.id.subs);
+
+        UID = ID.getCurrentUser().getUid();
+        databaseReference.child("users").child(UID).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                final String txtName =snapshot.child("fullname").getValue().toString();
+                activitySubsMemberBinding.txtName.setText("Hye " + txtName + "!!");
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
 
 
         Subs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Subscription();
+
             }
         });
     }
@@ -68,6 +82,13 @@ public class SubsMember extends Drawer_base {
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         if (snapshot.hasChild(UID)) {
                             Toast.makeText(SubsMember.this, "User already registered", Toast.LENGTH_LONG).show();
+                            SharedPreferences sharedPreferences = getSharedPreferences(Subb,0);
+                            SharedPreferences.Editor editor =sharedPreferences.edit();
+                            editor.putBoolean("hasSubbed",true);
+                            editor.commit();
+                            Intent intent = new Intent(getApplicationContext(), HomePage.class);
+                            startActivity(intent);
+                            finish();
                         } else {
 
                             databaseReference.child("membership").child(UID).child("FullName").setValue(dataName);
@@ -80,8 +101,7 @@ public class SubsMember extends Drawer_base {
                             editor.putBoolean("hasSubbed",true);
                             editor.commit();
 
-
-                            Intent intent = new Intent(getApplicationContext(), promoFragment.class);
+                            Intent intent = new Intent(getApplicationContext(), HomePage.class);
                             startActivity(intent);
                             finish();
 

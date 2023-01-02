@@ -16,6 +16,13 @@
         android:theme="@style/Theme.GoldenDreamsBowling"
         tools:targetApi="31">
         <activity
+            android:name=".AboutUsFragment"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Tshirt_page"
             android:exported="false">
             <meta-data
@@ -44,7 +51,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Booking.FinishBook"
+            android:name=".Booking.Cancel"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -59,13 +66,7 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity
-            android:name=".Booking.ExtrasBook"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+
         <activity
             android:name=".Booking.StartBook"
             android:exported="false">
@@ -122,13 +123,7 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity
-            android:name=".Guest.merchFrag2$aboutusFragment"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+
         <activity
             android:name=".LoggedInUser.promoFragment"
             android:exported="false">

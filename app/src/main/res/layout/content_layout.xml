@@ -8,13 +8,14 @@
         android:layout_height="wrap_content"
         android:id="@+id/appBarLayout"
         app:layout_constraintTop_toTopOf="parent">
+
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/lavender"
+            android:background="@color/S172945"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:titleTextColor="@color/white">
+            app:titleTextColor="@color/kuning">
 
         </androidx.appcompat.widget.Toolbar>
 

@@ -4,17 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/S37"
     tools:context=".Booking.StartBook">
+
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/payment_toolbar"
-        android:background="#8FF7FD"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="67dp"
+        android:background="@drawable/booking12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:title="Payment Detailed"/>
+        app:titleTextColor="@color/kuning" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,14 +32,18 @@
 
         <EditText
             android:id="@+id/Date"
-            android:layout_width="176dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
-            android:layout_marginBottom="25dp"
+            android:layout_width="209dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/button123"
+            android:backgroundTint="@color/B3EAFB"
             android:ems="10"
             android:inputType="date"
-            android:text="When ?"
-
+            android:text="Enter Date Here"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.194"
@@ -49,8 +56,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
-            android:text="Who ?"
+            android:text="Enter Detail Below "
             android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.112"
@@ -60,68 +69,111 @@
 
         <RadioGroup
             android:id="@+id/NumPlayer"
-            android:layout_width="340dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:layout_gravity="end"
+            android:layout_marginBottom="15dp"
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/player" />
+
+            <TextView
                 android:id="@+id/textView7"
-                android:layout_width="251dp"
-                android:layout_height="wrap_content"
-                android:text="Adults :" />
+                android:layout_width="179dp"
+                android:layout_height="match_parent"
+                android:text="Adults :"
+                android:textAlignment="center"
+                android:textColor="@color/E9FDF2"
+                android:textSize="23dp"
+                android:textStyle="bold" />
 
             <Spinner
                 android:id="@+id/spnNumPlayer"
                 android:layout_width="92dp"
-                android:layout_height="wrap_content"
-                android:entries="@array/numOfPeople_arrays" />
+                android:layout_height="match_parent"
+                android:background="@drawable/spinnn"
+                android:dropDownSelector="@color/E9FDF2"
+                android:entries="@array/numOfPeople_arrays"
+                android:popupBackground="@color/B3EAFB" />
 
 
         </RadioGroup>
 
         <RadioGroup
             android:id="@+id/NumGame"
-            android:layout_width="340dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:layout_gravity="end"
+            android:layout_marginBottom="15dp"
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/boling"/>
+
+            <TextView
                 android:id="@+id/textView10"
-                android:layout_width="251dp"
-                android:layout_height="wrap_content"
-                android:text="Games Per Person :" />
+                android:layout_width="186dp"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:textSize="23dp"
+                android:text="Games Per Person :"
+                android:textColor="@color/E9FDF2"
+                android:textStyle="bold" />
 
             <Spinner
                 android:id="@+id/spnNumGame"
                 android:layout_width="92dp"
-                android:layout_height="wrap_content"
-                android:entries="@array/numGame" />
+                android:background="@drawable/spinnn"
+                android:layout_height="match_parent"
+
+                android:dropDownSelector="@color/E9FDF2"
+                android:entries="@array/numGame"
+                android:popupBackground="@color/B3EAFB" />
 
         </RadioGroup>
 
         <RadioGroup
-            android:layout_width="342dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:layout_gravity="end"
+            android:layout_marginBottom="15dp"
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shoe"/>
+
+            <TextView
                 android:id="@+id/pilihkasut"
-                android:layout_width="253dp"
+                android:layout_width="186dp"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:text="Number of Shoes" />
+                android:textAlignment="center"
+                android:textSize="23dp"
+                android:text="Number of Shoes :"
+                android:textColor="@color/E9FDF2"
+                android:textStyle="bold" />
 
             <Spinner
                 android:id="@+id/spnShoes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:entries="@array/ShoesSize" />
+                android:layout_width="92dp"
+                android:layout_height="match_parent"
+                android:dropDownSelector="@color/E9FDF2"
+                android:entries="@array/ShoesSize"
+                android:background="@drawable/spinnn"
+                android:popupBackground="@color/B3EAFB" />
 
         </RadioGroup>
 
@@ -129,8 +181,11 @@
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="35dp"
             android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/C9F8DE"
+            android:textColor="@color/black"
+            android:textStyle="bold"
             android:text="Click here to proceed Selection" />
 
         <TextView
@@ -138,6 +193,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Time :"
+            android:textStyle="bold"
+            android:textColor="@color/white"
             android:textSize="20dp"
             tools:layout_editor_absoluteX="58dp"
             tools:layout_editor_absoluteY="2dp" />
@@ -145,7 +202,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="45dp"
+            android:layout_marginBottom="15dp"
             android:layout_gravity="center">
 
             <Spinner
@@ -154,6 +211,7 @@
                 android:layout_height="wrap_content"
                 android:entries="@array/Time1"
                 android:visibility="invisible"
+                android:backgroundTint="@color/C9F8DE"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -165,6 +223,7 @@
                 android:layout_height="wrap_content"
                 android:entries="@array/Time2"
                 android:visibility="invisible"
+                android:backgroundTint="@color/C9F8DE"
                 app:layout_constraintBottom_toBottomOf="@+id/spnTime"
                 app:layout_constraintEnd_toEndOf="@+id/spnTime"
                 app:layout_constraintStart_toStartOf="@+id/spnTime"
@@ -174,6 +233,7 @@
                 android:id="@+id/spnTime3"
                 android:layout_width="330dp"
                 android:layout_height="23dp"
+                android:backgroundTint="@color/C9F8DE"
                 android:entries="@array/Time3"
                 android:visibility="invisible"
                 app:layout_constraintBottom_toBottomOf="@+id/spnTime"
@@ -188,34 +248,75 @@
 
 
         <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="312dp"
+            android:layout_height="54dp"
             android:layout_gravity="center"
-            android:layout_marginBottom="35dp"
+            android:layout_marginBottom="25dp"
             android:orientation="horizontal">
 
 
             <TextView
                 android:id="@+id/textView11"
-                android:layout_width="165dp"
-                android:layout_height="80dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/C9F8DE"
+                android:backgroundTint="@color/B3EAFB"
                 android:text="Price : RM"
-                android:textSize="30dp" />
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/Price"
                 android:layout_width="173dp"
-                android:layout_height="80dp"
+                android:layout_height="match_parent"
+                android:background="@color/B3EAFB"
                 android:text=""
-                android:textSize="35dp" />
+                android:textColor="@color/black"
+                android:textSize="35dp"
+                android:textStyle="bold" />
 
         </RadioGroup>
 
-        <Button
-            android:id="@+id/checkout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="checkOut" />
+        <RadioGroup
+            android:layout_width="411dp"
+            android:layout_height="97dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="39dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/checkout"
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/C9F8DE"
+                android:text="checkOut"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="13dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="147dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="@drawable/logooosss"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.027" />
+        </RadioGroup>
 
 
     </LinearLayout>

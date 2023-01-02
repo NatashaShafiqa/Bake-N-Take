@@ -14,11 +14,11 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
-import com.example.goldendreamsbowling.Guest.merchFrag2;
 import com.example.goldendreamsbowling.HomePage;
 import com.example.goldendreamsbowling.Login;
 import com.example.goldendreamsbowling.R;
 import com.example.goldendreamsbowling.SubsMember;
+import com.example.goldendreamsbowling.AboutUsFragment;
 import com.google.android.material.navigation.NavigationView;
 
 public class Drawer_base extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -48,7 +48,7 @@ public class Drawer_base extends AppCompatActivity implements NavigationView.OnN
         NavigationView navigationView = drawerLayout.findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-         actionBarDrawerToggle  = new ActionBarDrawerToggle(this, drawerLayout,R.string.nav_open, R.string.nav_close);
+        actionBarDrawerToggle  = new ActionBarDrawerToggle(this, drawerLayout,R.string.nav_open, R.string.nav_close);
         actionBarDrawerToggle.syncState();
         drawerLayout.addDrawerListener(actionBarDrawerToggle);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -77,7 +77,7 @@ public class Drawer_base extends AppCompatActivity implements NavigationView.OnN
                 break;
 
             case R.id.nav_member:
-                SharedPreferences sharedPreferences1 = getSharedPreferences(Login.Pref_Name, 0);
+                SharedPreferences sharedPreferences1 = getSharedPreferences(SubsMember.Subb, 0);
                 boolean hasLogin1 = sharedPreferences1.getBoolean("hasSubbed", false);
                 if (hasLogin1) {
                     startActivity(new Intent(this, membersFragment.class));
@@ -95,7 +95,7 @@ public class Drawer_base extends AppCompatActivity implements NavigationView.OnN
                 overridePendingTransition(0, 0);
                 break;
             case R.id.nav_promo:
-                SharedPreferences sharedPreferences2 = getSharedPreferences(Login.Pref_Name, 0);
+                SharedPreferences sharedPreferences2 = getSharedPreferences(SubsMember.Subb, 0);
                 boolean hasLogin2 = sharedPreferences2.getBoolean("hasSubbed", false);
                 if (hasLogin2) {
                     startActivity(new Intent(this, promoFragment.class));
@@ -108,7 +108,7 @@ public class Drawer_base extends AppCompatActivity implements NavigationView.OnN
                 Toast.makeText(getApplicationContext(), "You navigated to settings screen", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.nav_aboutus:
-                startActivity(new Intent(this, merchFrag2.aboutusFragment.class));
+                startActivity(new Intent(this, AboutUsFragment.class));
                 overridePendingTransition(0, 0);
                 break;
 
@@ -117,12 +117,14 @@ public class Drawer_base extends AppCompatActivity implements NavigationView.OnN
     }
 
 
-
+/*
     protected void allocateActivityTitle(String StringTitle){
         if(getSupportActionBar() != null){
             getSupportActionBar().setTitle(StringTitle);
         }
     }
+
+ */
 
 
 }

@@ -23,8 +23,6 @@ import com.google.firebase.database.DatabaseReference;
 public class DrawerGuest extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     DrawerLayout drawerLayout;
-    DatabaseReference reference;
-    ActivityDrawerBaseBinding binding;
     private ActionBarDrawerToggle actionBarDrawerToggle;
 
     @Override
