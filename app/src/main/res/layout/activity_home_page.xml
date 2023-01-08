@@ -5,7 +5,6 @@
     android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/v7"
     tools:context=".HomePage">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -14,9 +13,9 @@
 
         <TextView
             android:id="@+id/textView18"
-            android:layout_width="302dp"
-            android:layout_height="149dp"
-            android:background="@drawable/logooosss"
+            android:layout_width="314dp"
+            android:layout_height="288dp"
+            android:background="@drawable/logo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.495"

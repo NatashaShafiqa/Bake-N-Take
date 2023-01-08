@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckOutFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="364dp"
+                android:layout_height="183dp"
+                android:layout_marginTop="70dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/cakeimage"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:src="@color/common_google_signin_btn_text_dark_disabled" />
+
+                <RadioGroup
+                    android:layout_width="187dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/cakename"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Cake Name"
+                        android:textColor="#000"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cakePrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Price"
+                        android:textColor="#000"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quantity"
+                        android:textColor="#000"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/Datee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Date"
+                        android:textColor="#000"
+                        android:textSize="25sp"/>
+
+                </RadioGroup>
+
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_marginTop="30dp"
+                android:layout_width="331dp"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="#000"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/AddressCheckout"
+                android:layout_width="331dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="#000"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="328dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Card Message"
+                android:textColor="#000"
+                android:textSize="20sp"/>
+
+
+            <TextView
+                android:id="@+id/messages"
+                android:layout_width="327dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="#000"
+                android:textSize="15sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="39dp"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/Debit"
+                    android:layout_width="96dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button123"
+                    android:backgroundTint="@color/E9FDF2"
+                    android:text="Debit"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="59dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/debit" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="23dp"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/onlineBank"
+                    android:layout_width="96dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button123"
+                    android:backgroundTint="@color/E9FDF2"
+                    android:text="Online Banking"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="59dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/obankk" />
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="134dp"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:id="@+id/Visa"
+                    android:layout_width="92dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button123"
+                    android:backgroundTint="@color/E9FDF2"
+                    android:text="Visa"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="59dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/visa" />
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/Pay"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Pay" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

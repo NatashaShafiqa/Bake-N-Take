@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GoldenDream\'s Bowling</string>
+    <string name="app_name">Bakery Application</string>
     <string name="password">Password</string>
     <string name="username">Username</string>
     <string name="signuphere">Create a new account? SignUp</string>
@@ -14,43 +14,10 @@
     <string name="nav_open">open</string>
     <string name="nav_close">close</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="title_activity_main2">MainActivity2</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_activity_check_out_book">CheckOutBook</string>
-    <string name="hello">Hello</string>
-    <string name="alice">Alice</string>
-    <string name="search_elements">Search elements</string>
-    <string name="t_shirt">T-shirt</string>
-    <string name="mug">Mug</string>
-    <string name="totebag">Totebag</string>
-    <string name="cap">Cap</string>
-    <string name="trending">TRENDING</string>
-    <string name="welcome_to_t_shirt_page">WELCOME TO T-SHIRT PAGE</string>
-    <string name="tshirtpage">TshirtPage</string>
-    <string name="totebagpage">Totebagpage</string>
-    <string name="welcome_to_totebag_page">WELCOME TO TOTEBAG PAGE</string>
-    <string name="welcome_to_cap_page">WELCOME TO CAP PAGE</string>
-    <string name="cappage">Cappage</string>
-    <string name="welcome_to_mug_page">WELCOME TO MUG PAGE</string>
-    <string name="mugpage">Mugpage</string>
-    <string name="white_t_shirt">WHITE T-SHIRT</string>
-    <string name="orange_t_shirt">ORANGE T-SHIRT</string>
-    <string name="purple_t_shirt">PURPLE T-SHIRT</string>
-    <string name="green_t_shirt">GREEN T-SHIRT</string>
-    <string name="white_totebag">WHITE TOTEBAG</string>
-    <string name="purple_totebag">PURPLE TOTEBAG</string>
-    <string name="green_totebag">GREEN TOTEBAG</string>
-    <string name="white_mug">WHITE MUG</string>
-    <string name="dark_gray_mug">DARK GRAY MUG</string>
-    <string name="white_cap">WHITE CAP</string>
-    <string name="dark_gray_cap">DARK GRAY CAP</string>
-    <string name="purple_cap">PURPLE CAP</string>
-    <string name="purple_mug">PURPLE MUG</string>
-    <string name="dark_grey_mug">DARK GREY MUG</string>
 
     <string-array name="ShoesSize">
         <item>4</item>
@@ -109,6 +76,14 @@
         <item>16.30-19.00</item>
         <item>19.00-21.30</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_bakery_main">BakeryMain</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_account_main">AccountMain</string>
+    <string name="title_activity_account">Account</string>
 
 
 </resources>

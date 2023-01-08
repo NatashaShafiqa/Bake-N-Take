@@ -6,39 +6,16 @@
             android:id="@+id/nav_home"
             />
         <item
-            android:title="Booking"
-            android:id="@+id/nav_booking"
+            android:title="Shop"
+            android:id="@+id/nav_Shop"
             />
         <item
-            android:title="Member"
-            android:id="@+id/nav_member"
+            android:title="Account"
+            android:id="@+id/nav_account"
             />
         <item
-            android:title="Announcement"
-            android:id="@+id/nav_announce"
-            />
-        <item
-            android:title="Merchandise"
-            android:id="@+id/nav_merch"
-            />
-        <item
-            android:title="Promotion"
-            android:id="@+id/nav_promo"
+            android:title="Track Order"
+            android:id="@+id/nav_history"
             />
     </group>
-    <item android:title=""
-        >
-        <menu>
-            <group android:checkableBehavior="single">
-                <item
-                    android:title="Setting"
-                    android:id="@+id/nav_setting"
-                    />
-                <item
-                    android:title="About Us"
-                    android:id="@+id/nav_aboutus"
-                    />
-            </group>
-        </menu>
-    </item>
 </menu>

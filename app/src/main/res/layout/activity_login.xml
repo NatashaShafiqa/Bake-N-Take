@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="207dp"
-        android:layout_height="55dp"
+        android:layout_width="248dp"
+        android:layout_height="60dp"
         android:layout_marginTop="28dp"
         android:background="@drawable/login"
         android:textColor="@color/B3EAFB"

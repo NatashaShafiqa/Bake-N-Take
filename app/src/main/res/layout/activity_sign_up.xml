@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/v11"
-    tools:ignore="MissingClass">
+    tools:context=".signUp">
 
 
     <TextView
@@ -20,22 +20,42 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout6" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout3"
+        android:id="@+id/textInputLayout65"
         android:layout_width="340dp"
         android:layout_height="53dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/E9FDF2"
+            android:drawableRight="@drawable/name"
+            android:drawableTint="@color/purple_700"
+            android:hint="Username" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="340dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout65">
+
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/NameSUp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/E9FDF2"
             android:drawableRight="@drawable/name"
             android:drawableTint="@color/purple_700"
-            android:background="@color/E9FDF2"
 
             android:hint="Name" />
     </com.google.android.material.textfield.TextInputLayout>

@@ -1,42 +1,34 @@
 {
   "project_info": {
-    "project_number": "116986843475",
-    "firebase_url": "https://workshop2-d8198-default-rtdb.firebaseio.com",
-    "project_id": "workshop2-d8198",
-    "storage_bucket": "workshop2-d8198.appspot.com"
+    "project_number": "180729350204",
+    "firebase_url": "https://bakery-application-b53de-default-rtdb.firebaseio.com",
+    "project_id": "bakery-application-b53de",
+    "storage_bucket": "bakery-application-b53de.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:116986843475:android:b40192c30e3f52b4aad1a6",
+        "mobilesdk_app_id": "1:180729350204:android:fb076e5f55aea73ee85b39",
         "android_client_info": {
-          "package_name": "com.example.goldendreamsbowling"
+          "package_name": "com.example.BakeryApps"
         }
       },
       "oauth_client": [
         {
-          "client_id": "116986843475-lf46pmvkl1n0toj3vtq3vj6sperrv06l.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.goldendreamsbowling",
-            "certificate_hash": "34a35b065329627216a90923385f998c2292a501"
-          }
-        },
-        {
-          "client_id": "116986843475-bmrpv2ggscmiblbe7l3vd8o7t0kui4t2.apps.googleusercontent.com",
+          "client_id": "180729350204-mgv28r3jcbta4am05nlqmi5crdbuvb7q.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBFhxvte-5u8a08HwFiQA68t3ZII44iimg"
+          "current_key": "AIzaSyBW829lokQf4jermqd9tJsB9SrVyerSy9g"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "116986843475-bmrpv2ggscmiblbe7l3vd8o7t0kui4t2.apps.googleusercontent.com",
+              "client_id": "180729350204-mgv28r3jcbta4am05nlqmi5crdbuvb7q.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
