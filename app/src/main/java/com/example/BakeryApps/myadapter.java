@@ -34,6 +34,7 @@ public class myadapter extends FirebaseRecyclerAdapter<model,myadapter.myviewhol
                       AppCompatActivity activity=(AppCompatActivity)view.getContext();
                       activity.getSupportFragmentManager().beginTransaction().replace(R.id.wrapper,new DetailCakeMain(model.getUrl(),model.getName(),model.getDescription(),model.getPrice())).addToBackStack(null).commit();
                   }
+                  //
               });
     }
 
