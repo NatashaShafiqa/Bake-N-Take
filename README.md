@@ -1,4 +1,4 @@
-# Bakery_Application
+# Bake N' Take
 Final Project Mobile Application Development
 
 Group Members
