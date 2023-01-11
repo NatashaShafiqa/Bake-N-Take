@@ -2,6 +2,7 @@
 Final Project Mobile Application Development
 
 Group Members
+-
 1. Nurul Asyqin Binti Haris (B032010229)
 2. Muhammad Zulfikri Bin Awang (B032010087)
 3. Natasha Shafiqa Binti A. Najebudin (B032010228)
@@ -9,7 +10,7 @@ Group Members
 
 
 Introduction
-
+-
 
 Instruction to Use the Application
 - 
