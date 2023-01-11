@@ -17,10 +17,10 @@ Instruction to Use the Application
 
 Functions include 
 -
-Navigation View : the navigation view can be locate at Drawer_base.java file.
-Fragment : Fragment locate at shopCakeMain.java and  DetailCakeMain.java are use together with adapter in myadapter.java file.
+1. Navigation View : the navigation view can be locate at Drawer_base.java file.
+2. Fragment : Fragment locate at shopCakeMain.java and  DetailCakeMain.java are use together with adapter in myadapter.java file.
          : other fragment can be locate at MapsFragment.java and CheckOut.java.
-Activity : this application mainly using multiple activity such as account.java, Login.java, signUp.java, ViewOrderMain.java and so on.
+3. Activity : this application mainly using multiple activity such as account.java, Login.java, signUp.java, ViewOrderMain.java and so on.
 
 
 
