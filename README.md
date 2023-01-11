@@ -8,7 +8,6 @@ Group Members
 3. Natasha Shafiqa Binti A Najebudin (B032010228)
 4. Aqil Rafiq Bin Mohammad (B032010200)
 
-
 Introduction
 -
 
@@ -18,15 +17,15 @@ Instruction to Use the Application
 Functions include 
 -
 1. Navigation View : the navigation view can be locate at Drawer_base.java file.
-2. Fragment : Fragment locate at shopCakeMain.java and  DetailCakeMain.java are use together with adapter in myadapter.java file.
-         : other fragment can be locate at MapsFragment.java and CheckOut.java.
-3. Activity : this application mainly using multiple activity such as account.java, Login.java, signUp.java, ViewOrderMain.java and so on.
+2. Fragment : Fragment locate at shopCakeMain.java and  DetailCakeMain.java are use together with adapter in myadapter.java file.    
+            : other fragment can be locate at MapsFragment.java and CheckOut.java.
+4. Activity : this application mainly using multiple activity such as account.java, Login.java, signUp.java, ViewOrderMain.java and so on.
 
 
 
 DataBase
 - 
-Using Firebase Database
+Using Firebase Database  
 Object Declared :
 1. Image - store cake data such as name,price,description and url.
 2. Address - to store user address data include House unit and Road Address.
