@@ -15,12 +15,25 @@ Introduction
 Instruction to Use the Application
 -
 
-Functions
+Functions include : 
 -
+
+
 
 DataBase
--
+- 
+Using Firebase Database
+Object Declared :
+1. Image - store cake data such as name,price,description and url.
+2. Address - to store user address data include House unit and Road Address.
+3. Payment - to store user payment data such as address, cake name,cake url, candle, date, message, payment method,payment id,price and quantity.
+4. Profile - to store url of image of the user default profile.
+5. profileUser - to store url of image of user after they change the profile.
+6. users - to store users data such as username,fullname,email,phone number and password.
+
 
 External REST API
--
+- 
+Using Google Map API
+Function : to set current location of user and save as address of user
 
