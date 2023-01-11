@@ -13,4 +13,14 @@ Introduction
 -
 
 Instruction to Use the Application
-- 
+-
+
+Functions
+-
+
+DataBase
+-
+
+External REST API
+-
+
