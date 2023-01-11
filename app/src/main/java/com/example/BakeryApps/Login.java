@@ -37,7 +37,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class Login extends AppCompatActivity {
 
-  public static String Pref_Name ="MyFile";
+    public static String Pref_Name ="MyFile";
     TextView textViewSignUp, Emaill, password;
     Button Login;
     ImageButton googleLog;
@@ -64,6 +64,7 @@ public class Login extends AppCompatActivity {
         password = findViewById(R.id.password);
         auth = FirebaseAuth.getInstance();
         mAuth = FirebaseAuth.getInstance();
+        TextView forgotPass = findViewById(R.id.forgotpassword);
 
         GoogleSignInOptions  options = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
@@ -76,6 +77,14 @@ public class Login extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = client.getSignInIntent();
                 startActivityForResult(i,145);
+            }
+        });
+
+        forgotPass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Login.this, ForgotPassword.class));
+                finish();
             }
         });
 
@@ -109,7 +118,7 @@ public class Login extends AppCompatActivity {
                                         editor.commit();
                                         Toast.makeText(getApplicationContext(), "Login successful!", Toast.LENGTH_LONG).show();
 
-                                        Intent intent = new Intent(Login.this, BakeryMain.class);
+                                        Intent intent = new Intent(Login.this, HomePage.class);
                                         startActivity(intent);
                                     }
                                     else {
@@ -151,18 +160,19 @@ public class Login extends AppCompatActivity {
                                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                                     if (snapshot.hasChild(userLogin)) {
                                         Toast.makeText(Login.this, "User already registered", Toast.LENGTH_LONG).show();
-                                        Intent intent = new Intent(getApplicationContext(),BakeryMain.class);
+                                        Intent intent = new Intent(getApplicationContext(),HomePage.class);
                                         startActivity(intent);
                                         finish();
                                     } else {
                                         databaseReference.child("users").child(userLogin).child("email").setValue(email);
-                                        databaseReference.child("users").child(userLogin).child("username").setValue("");
+                                        databaseReference.child("users").child(userLogin).child("username").setValue("user01");
                                         databaseReference.child("users").child(userLogin).child("fullname").setValue(Name);
                                         databaseReference.child("users").child(userLogin).child("phone").setValue("");
                                         databaseReference.child("users").child(userLogin).child("password").setValue("");
                                         Toast.makeText(Login.this, "Registration successful", Toast.LENGTH_LONG).show();
-                                        Intent intent = new Intent(getApplicationContext(),Login.class);
+                                        Intent intent = new Intent(getApplicationContext(),HomePage.class);
                                         startActivity(intent);
+
                                         finish();
 
                                     }

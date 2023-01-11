@@ -3,7 +3,6 @@ package com.example.BakeryApps;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.BakeryApps.LoggedInUser.Drawer_base;
 import com.example.BakeryApps.databinding.ActivityHomePageBinding;
 
 public class HomePage extends Drawer_base {

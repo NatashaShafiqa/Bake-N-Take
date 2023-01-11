@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CheckOutFragment">
+    tools:context=".CheckOutFragment"
+    android:background="@drawable/bgambar">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -16,9 +17,9 @@
             android:orientation="vertical">
 
             <RadioGroup
-                android:layout_width="364dp"
-                android:layout_height="183dp"
-                android:layout_marginTop="70dp"
+                android:layout_width="368dp"
+                android:layout_height="212dp"
+                android:layout_marginTop="50dp"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -64,7 +65,7 @@
                         android:layout_height="wrap_content"
                         android:text="Date"
                         android:textColor="#000"
-                        android:textSize="25sp"/>
+                        android:textSize="25sp" />
 
                 </RadioGroup>
 
@@ -78,6 +79,7 @@
                 android:layout_width="331dp"
                 android:layout_height="wrap_content"
                 android:text="Address"
+                android:textStyle="bold"
                 android:textColor="#000"
                 android:textSize="20sp"/>
 
@@ -95,6 +97,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="Card Message"
+                android:textStyle="bold"
                 android:textColor="#000"
                 android:textSize="20sp"/>
 
@@ -124,8 +127,6 @@
                     android:layout_width="96dp"
                     android:layout_height="42dp"
                     android:layout_gravity="center"
-                    android:background="@drawable/button123"
-                    android:backgroundTint="@color/E9FDF2"
                     android:text="Debit"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
@@ -147,8 +148,6 @@
                     android:layout_width="96dp"
                     android:layout_height="38dp"
                     android:layout_gravity="center"
-                    android:background="@drawable/button123"
-                    android:backgroundTint="@color/E9FDF2"
                     android:text="Online Banking"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
@@ -184,8 +183,6 @@
                     android:layout_width="92dp"
                     android:layout_height="42dp"
                     android:layout_gravity="center"
-                    android:background="@drawable/button123"
-                    android:backgroundTint="@color/E9FDF2"
                     android:text="Visa"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
@@ -208,6 +205,8 @@
                 android:layout_width="117dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:backgroundTint="@color/B3EAFB"
+                android:textColor="@color/black"
                 android:text="Pay" />
 
 

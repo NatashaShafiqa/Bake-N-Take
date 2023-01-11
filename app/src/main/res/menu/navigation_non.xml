@@ -2,20 +2,23 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
         <item
-            android:title="Home"
             android:id="@+id/nav_home"
-            />
+            android:icon="@drawable/home"
+            android:title="Home" />
         <item
             android:title="Shop"
+            android:icon="@drawable/home"
             android:id="@+id/nav_Shop"
             />
         <item
             android:title="Account"
             android:id="@+id/nav_account"
+            android:icon="@drawable/account"
             />
         <item
-            android:title="Track Order"
+            android:title="View Order"
             android:id="@+id/nav_history"
+            android:icon="@drawable/vieworder"
             />
     </group>
 </menu>

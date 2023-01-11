@@ -1,20 +1,17 @@
 package com.example.BakeryApps;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -87,7 +84,7 @@ public class CheckOutFragment extends Fragment {
         }
     }
 
-    String payMethod="",PayID;
+    String payMethod,PayID;
     DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
     FirebaseAuth ID;
     String UID;
@@ -129,7 +126,7 @@ public class CheckOutFragment extends Fragment {
 
         Glide.with(getContext()).load(url).into(imageCake);
         cakename.setText(Name);
-        price.setText("Price : " + Price);
+        price.setText("Price : RM" + Price);
         quantity.setText("Quantity : "+Quant);
         edtmessage.setText(Message);
         datee.setText("Date : "+Date);
@@ -139,7 +136,32 @@ public class CheckOutFragment extends Fragment {
         Random random = new Random();
         int value = random.nextInt(10000);
         PayID = Integer.toString(value);
-        String pp = "GDB005"+PayID;
+        String pp = "BNT0021"+PayID;
+        c1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                c2.setChecked(false);
+                c3.setChecked(false);
+                payMethod = c1.getText().toString().trim();
+            }
+        });
+        c2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                c1.setChecked(false);
+                c3.setChecked(false);
+                payMethod = c2.getText().toString().trim();
+            }
+        });
+        c3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                payMethod = c3.getText().toString().trim();
+                c2.setChecked(false);
+                c1.setChecked(false);
+            }
+        });
+
 
         Button pay = view.findViewById(R.id.Pay);
         pay.setOnClickListener(new View.OnClickListener() {
@@ -147,18 +169,7 @@ public class CheckOutFragment extends Fragment {
             public void onClick(View v) {
 
                 UID = ID.getCurrentUser().getUid();
-                if(c1.isChecked())
-                {
-                    payMethod += c1.getText().toString().trim();
-                }
-                if(c2.isChecked())
-                {
-                    payMethod += c2.getText().toString().trim();
-                }
-                if(c3.isChecked())
-                {
-                    payMethod += c3.getText().toString().trim();
-                }
+
                 String methodpay = payMethod;
 
                 databaseReference.child("users").child(UID).addListenerForSingleValueEvent(new ValueEventListener() {
@@ -169,15 +180,18 @@ public class CheckOutFragment extends Fragment {
                             @Override
                             public void onDataChange(@NonNull DataSnapshot snapshot) {
                                 databaseReference.child("Payment").child(UID).child("Date").setValue(Date);
+                                databaseReference.child("Payment").child(UID).child("CakeImg").setValue(url);
                                 databaseReference.child("Payment").child(UID).child("CakeName").setValue(Name);
+                                databaseReference.child("Payment").child(UID).child("Message").setValue(Message);
                                 databaseReference.child("Payment").child(UID).child("Price").setValue(Price);
                                 databaseReference.child("Payment").child(UID).child("Quantity").setValue(Quant);
                                 databaseReference.child("Payment").child(UID).child("PaymentID").setValue(pp);
                                 databaseReference.child("Payment").child(UID).child("Candle").setValue(candle);
                                 databaseReference.child("Payment").child(UID).child("MethodPay").setValue(methodpay);
+                                databaseReference.child("Payment").child(UID).child("Address").setValue(address);
                                 Toast.makeText(getContext(), "successful", Toast.LENGTH_LONG).show();
                                 AppCompatActivity activity=(AppCompatActivity)view.getContext();
-                                activity.getSupportFragmentManager().beginTransaction().replace(R.id.wrapper,new recfragment());
+                                activity.getSupportFragmentManager().beginTransaction().replace(R.id.wrapper,new shopCakeMain());
 
                             }
 
@@ -202,4 +216,12 @@ public class CheckOutFragment extends Fragment {
         });
        return view;
     }
+    public void onBackPressed()
+    {
+        AppCompatActivity activity=(AppCompatActivity)getContext();
+        activity.getSupportFragmentManager().beginTransaction().replace(R.id.wrapper,new DetailCakeMain()).addToBackStack(null).commit();
+
+    }
+
 }
+

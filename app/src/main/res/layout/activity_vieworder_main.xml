@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgambar"
+    tools:context=".CheckOutFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <RadioGroup
+                android:layout_width="349dp"
+                android:layout_height="398dp"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/cakeimage"
+                    android:layout_width="260dp"
+                    android:layout_height="231dp"
+                    android:layout_gravity="center"
+                    android:src="@color/common_google_signin_btn_text_dark_disabled" />
+
+                <RadioGroup
+                    android:layout_width="315dp"
+                    android:layout_height="149dp"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/cakename"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="Cake Name"
+                        android:textColor="#000"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/cakePrice"
+                            android:layout_width="177dp"
+                            android:layout_height="wrap_content"
+                            android:text="Price"
+                            android:textColor="#000"
+                            android:textSize="21sp" />
+
+                        <TextView
+                            android:id="@+id/quantity"
+                            android:layout_width="138dp"
+                            android:layout_height="wrap_content"
+                            android:text="Quantity"
+                            android:textColor="#000"
+                            android:textSize="21sp" />
+                    </RadioGroup>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="57dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/Datee"
+                            android:layout_width="177dp"
+                            android:layout_height="wrap_content"
+                            android:text="Date"
+                            android:textColor="#000"
+                            android:textSize="21sp" />
+
+                        <TextView
+                            android:id="@+id/candle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Candle"
+                            android:textColor="#000"
+                            android:textSize="21sp" />
+                    </RadioGroup>
+
+
+                </RadioGroup>
+
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_marginTop="5dp"
+                android:layout_width="331dp"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="#000"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/Address"
+                android:layout_width="331dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="328dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Card Message"
+                android:textColor="#000"
+                android:textSize="20sp"/>
+
+
+            <TextView
+                android:id="@+id/messages"
+                android:layout_width="327dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="326dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="Payment ID"
+                android:textColor="#000"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/paymentID"
+                android:layout_width="328dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="328dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Payment Method"
+                android:textColor="#000"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/PaymentMethod"
+                android:layout_width="326dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
