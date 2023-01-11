@@ -5,7 +5,7 @@ Group Members
 -
 1. Nurul Asyqin Binti Haris (B032010229)
 2. Muhammad Zulfikri Bin Awang (B032010087)
-3. Natasha Shafiqa Binti A. Najebudin (B032010228)
+3. Natasha Shafiqa Binti A Najebudin (B032010228)
 4. Aqil Rafiq Bin Mohammad (B032010200)
 
 
@@ -15,8 +15,12 @@ Introduction
 Instruction to Use the Application
 -
 
-Functions include : 
+Functions include 
 -
+Navigation View - the navigation view can be locate at Drawer_base.java file
+Fragment - Fragment locate at shopCakeMain.java and  DetailCakeMain.java are use together with adapter in myadapter.java file
+         - other fragment can be locate at MapsFragment.java and CheckOut.java
+Activity - this application mainly using multiple activity such as account.java, Login.java, signUp.java, ViewOrderMain.java and so on.
 
 
 
