@@ -9,7 +9,7 @@ Group Members
 4. Aqil Rafiq Bin Mohammad (B032010200)
 
 Introduction
--
+- Bake N' Take is the mobile application of cake booking system. Customer can register to the application and browse the cake based on the menus that shop provided. Customer also can put message, select quantities of cake and candles based on their preferences. This system can be useful for bakeries, pastry shops and online cake delivery businesses to automate their ordering process and improve customer experience.
 
 Instruction to Use the Application
 -
