@@ -68,7 +68,6 @@ public class ForgotPassword extends AppCompatActivity {
                             }
                         }
                         else{
-                            Toast.makeText(ForgotPassword.this,dataUsername,Toast.LENGTH_LONG).show();
                             binding.usernameforgot.setError("Invalid Username");
                             binding.usernameforgot.requestFocus();
                         }

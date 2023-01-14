@@ -8,7 +8,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class BakeryMain extends Drawer_base {
 
-    private BottomNavigationView bottomNavigationView;
     ActivityBakeryMainBinding bind;
 
     @Override
